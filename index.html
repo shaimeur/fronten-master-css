@@ -9,64 +9,76 @@
     <title>Coffee Masters</title>
 </head>
 <body>
-        <header>
+     <header>
             <nav id="navbar">
                 <i class="fa fa-mug-hot"></i>
                 <h1>Coffe Masters</h1>
             </nav>
-        </header>
+     </header>
         <main>
-            <section class="items">
-                <h2>ITEMS</h2>
-                    <div class="item">
-                        <div>1x</div>
-                        <div>Cappuccino</div>
-                        <div>life foam</div>
-                        <div>$3.35</div>
-                    </div>
-                    <div class="item">
-                        <div>1x</div>
-                        <div>Cappuccino</div>
-                        <div>life foam</div>
-                        <div>$3.35</div>
-                    </div>
-                    <div class="item">
-                        <div>1x</div>
-                        <div>Cappuccino</div>
-                        <div>life foam</div>
-                        <div>$3.35</div>
-                    </div>
-            </section>
 
-            <section class="name">
-                <h2>NAME</h2>
-                <label for="order-name">Name for order</label>
-                <input id="order-name" type="text" placeholder="Ford Perfect">
-            </section>
+            <div class="container" >
 
-            <section class="payment">
-                <h2>PAYMENT</h2>
-                <label for="card-number">Card number</label>
-                <input type="number" name="card-number" id="card-number" placeholder="1234 5678 9012 3456">
-                <label for="ccv-number">CCV Number</label>
-                <input type="number" name="" id="ccv-number" placeholder="001">
-            </section>
+                    <section class="items">
+                        <h2>ITEMS</h2>
 
-            <section class="price">
-                <div class="subtotal">
-                    <h4>Subtotal</h4>
-                    <span>$9.65</span>
+                            <div class="item">
+                                <div>1x</div>
+                                <div>Cappuccino</div>
+                                <div>life foam</div>
+                                <div>$3.35</div>
+                                <hr>
+                            </div>
+
+                            <div class="item">
+                                <div>1x</div>
+                                <div>Cappuccino</div>
+                                <div>life foam</div>
+                                <div>$3.35</div>
+                                <hr>
+                            </div>
+
+                            <div class="item">
+                                <div>1x</div>
+                                <div>Cappuccino</div>
+                                <div>life foam</div>
+                                <div>$3.35</div>
+                                <hr>
+                            </div>
+
+                    </section>
+                <div class="sub-container">
+
+                    <section class="name">
+                        <h2>NAME</h2>
+                        <label for="order-name">Name for order</label>
+                        <input id="order-name" type="text" placeholder="Ford Perfect">
+                    </section>
+
+                    <section class="payment">
+                        <h2>PAYMENT</h2>
+                        <label for="card-number">Card number</label>
+                        <input type="number" name="card-number" id="card-number" placeholder="1234 5678 9012 3456">
+                        <label for="ccv-number">CCV Number</label>
+                        <input type="number" name="" id="ccv-number" placeholder="001">
+                    </section>
                 </div>
-                <div class="tax">
-                    <h4>Tax</h4>
-                    <span>$0.82</span>
-                </div>
-                <div class="total">
-                    <h4>Total</h4>
-                    <span>$10.47</span>
-                </div>
-            </section>
-            <button>Place order</button>
+            </div>
+                    <section class="price">
+                        <div class="subtotal">
+                            <h4>Subtotal</h4>
+                            <span>$9.65</span>
+                        </div>
+                        <div class="tax">
+                            <h4>Tax</h4>
+                            <span>$0.82</span>
+                        </div>
+                        <div class="total">
+                            <h4>Total</h4>
+                            <span>$10.47</span>
+                        </div>
+                    </section>
+            <button class="btn">Place order</button>
         </main>
 </body>
 </html>
