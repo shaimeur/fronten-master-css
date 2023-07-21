@@ -4,9 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <title>css</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Coffee Masters</title>
 </head>
 <body>
+        <header>
+            <nav id="navbar">
+                <i class="fa fa-mug-hot"></i>
+                <h1>Coffe Masters</h1>
+            </nav>
+        </header>
+        <main>
+            <section class="items">
+                <h2>ITEMS</h2>
+                    <div class="item">
+                        <div>1x</div>
+                        <div>Cappuccino</div>
+                        <div>life foam</div>
+                        <div>$3.35</div>
+                    </div>
+                    <div class="item">
+                        <div>1x</div>
+                        <div>Cappuccino</div>
+                        <div>life foam</div>
+                        <div>$3.35</div>
+                    </div>
+                    <div class="item">
+                        <div>1x</div>
+                        <div>Cappuccino</div>
+                        <div>life foam</div>
+                        <div>$3.35</div>
+                    </div>
+            </section>
 
+            <section class="name">
+                <h2>NAME</h2>
+                <label for="order-name">Name for order</label>
+                <input id="order-name" type="text" placeholder="Ford Perfect">
+            </section>
+
+            <section class="payment">
+                <h2>PAYMENT</h2>
+                <label for="card-number">Card number</label>
+                <input type="number" name="card-number" id="card-number" placeholder="1234 5678 9012 3456">
+                <label for="ccv-number">CCV Number</label>
+                <input type="number" name="" id="ccv-number" placeholder="001">
+            </section>
+
+            <section class="price">
+                <div class="subtotal">
+                    <h4>Subtotal</h4>
+                    <span>$9.65</span>
+                </div>
+                <div class="tax">
+                    <h4>Tax</h4>
+                    <span>$0.82</span>
+                </div>
+                <div class="total">
+                    <h4>Total</h4>
+                    <span>$10.47</span>
+                </div>
+            </section>
+            <button>Place order</button>
+        </main>
 </body>
 </html>
