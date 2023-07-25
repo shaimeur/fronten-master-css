@@ -2,43 +2,104 @@
     box-sizing: border-box;
 }
 body{
-
     margin: 0;
     padding: 0;
-
-}
-.page{
-    height: 100vh;
-    background-color: #eff0f0;
-
 }
 #navbar{
-    background-color: #412315;
+    background-color: #43281c;
     color: #9d8a6b;
-    height: 20vh;
+    height: 10vh;
+}
+.logo {
+    height: 45px;
+    width: 45px;
+    margin-left: -200px;
+    margin-top: 13px;
 }
 
 #navbar h1 {
     text-align: center;
 }
 
+
+/* .page{
+    height: 100vh;
+    background-color: #eff0f0;
+} */
+
+
+/* container  of the layout */
+.page {
+    height: 100vh;
+    background-color: #eff0f0;
+
+}
 .container {
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(2,1fr) ;
+    grid-template-areas: "order-box  payment";
+    gap: 90px;
 }
 
 .order-box{
+    background-color: #eee1d5;
     border: 2px solid red;
-    display: flex;
-    /* justify-content: center; */
+    grid-area: "order-box";
 }
-
 .payment {
     border: 2px solid blue;
+    grid-area: "payment";
     display: flex;
-    /* flex-direction: column;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.total {
+    border: 2px solid salmon;
+}
+
+
+.items {
+    list-style-type: none;
+}
+.item {
+    /* display: flex;
+    justify-content: flex-start; */
+    padding: 18px;
+    border: 2px solid black;
+}
+.item-price {
+    display: flex;
+    /* align-self: flex-end; */
+}
+.item-option-list {
+    list-style-type: none;
+    /* display: flex;
+    flex-direction: column ; */
+    /* position: absolute; */
+}
+.item-option{
+    /* position: relative;
+    top: 16px;
+    left: 128px; */
+    background-color:azure;
+
+}
+
+/* payment section */
+
+.name-box {
+    border: 2px solid black;
+    background-color: #eee1d5;
+}
+.cc-box {
+    border: 2px solid red;
+    background-color: #eee1d5;
+}
+
+.total-table {
+    display: flex;
     justify-content: center;
-    align-items: center; */
+    align-content:center
 }
 
 
