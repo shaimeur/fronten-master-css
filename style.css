@@ -1,9 +1,10 @@
 *{
     box-sizing: border-box;
-}
-body{
     margin: 0;
     padding: 0;
+}
+body{
+    background-color: #eff0f0;
 }
 #navbar{
     background-color: #43281c;
@@ -11,78 +12,63 @@ body{
     height: 10vh;
 }
 .logo {
+    position: relative;
     height: 45px;
     width: 45px;
-    margin-left: -200px;
-    margin-top: 13px;
+    top: 10px;
+    right: 207px;
 }
 
 #navbar h1 {
     text-align: center;
 }
-
-
-/* .page{
-    height: 100vh;
-    background-color: #eff0f0;
-} */
-
-
 /* container  of the layout */
 .page {
-    height: 100vh;
-    background-color: #eff0f0;
-
-}
-.container {
     display: grid;
-    grid-template-columns: repeat(2,1fr) ;
-    grid-template-areas: "order-box  payment";
-    gap: 90px;
+    width: 100%;
+    row-gap: 30px;
+    column-gap: 30px;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-areas:
+    "order   payment"
+    "total total";
+    padding: 30px;
+    margin: 0 auto;
 }
 
-.order-box{
-    background-color: #eee1d5;
-    border: 2px solid red;
-    grid-area: "order-box";
+.order{
+    grid-area: "order";
+
 }
-.payment {
-    border: 2px solid blue;
+.payment{
     grid-area: "payment";
+    border: 2px solid blue;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 .total {
-    border: 2px solid salmon;
+    grid-area: "total";
 }
-
+.box{
+    border: 2px solid red;
+}
 
 .items {
     list-style-type: none;
 }
 .item {
-    /* display: flex;
-    justify-content: flex-start; */
     padding: 18px;
     border: 2px solid black;
 }
 .item-price {
     display: flex;
-    /* align-self: flex-end; */
 }
 .item-option-list {
     list-style-type: none;
-    /* display: flex;
-    flex-direction: column ; */
-    /* position: absolute; */
 }
 .item-option{
-    /* position: relative;
-    top: 16px;
-    left: 128px; */
     background-color:azure;
-
 }
 
 /* payment section */
@@ -96,11 +82,7 @@ body{
     background-color: #eee1d5;
 }
 
-.total-table {
-    display: flex;
-    justify-content: center;
-    align-content:center
-}
+
 
 
 
