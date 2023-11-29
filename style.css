@@ -26,12 +26,13 @@ body{
 .page {
     display: grid;
     width: 100%;
-    row-gap: 30px;
-    column-gap: 30px;
-    grid-template-columns: 1fr 1fr ;
-    grid-template-areas:
+    row-gap: 70px;
+    column-gap: 100px;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 1fr ;
+    /* grid-template-areas:
     "order   payment"
-    "total total";
+    "total total"; */
     padding: 30px;
     margin: 0 auto;
 }
@@ -42,16 +43,17 @@ body{
 }
 .payment{
     grid-area: "payment";
-    border: 2px solid blue;
-    display: flex;
+    /* border: 2px solid blue; */
+    /* display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around; */
 }
 .total {
     grid-area: "total";
 }
 .box{
-    border: 2px solid red;
+    /* border: 2px solid red; */
+    background-color: #eee1d5;
 }
 
 .items {
@@ -59,10 +61,10 @@ body{
 }
 .item {
     padding: 18px;
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 .item-price {
-    display: flex;
+    color: red;
 }
 .item-option-list {
     list-style-type: none;
@@ -74,11 +76,11 @@ body{
 /* payment section */
 
 .name-box {
-    border: 2px solid black;
+    /* border: 2px solid black; */
     background-color: #eee1d5;
 }
 .cc-box {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     background-color: #eee1d5;
 }
 
